@@ -1,0 +1,709 @@
+/* ============================================================
+   style.css - Assignment Submission Portal - GDCST
+   ============================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background: #f0f2f5;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: #1565c0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.site-header {
+    background: #1565c0;
+    color: #fff;
+    padding: 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.header-inner {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.college-short {
+    font-size: 28px;
+    font-weight: bold;
+    background: #fff;
+    color: #1565c0;
+    width: 115px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.college-name {
+    font-size: 13px;
+    opacity: 0.9;
+    letter-spacing: 0.3px;
+}
+
+.portal-name {
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.header-nav a {
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    text-decoration: none;
+}
+.log
+{
+    margin-left: 4px ;
+}
+.header-nav a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.nav-user {
+    color: #fff;
+    font-size: 13px;
+    padding: 5px 10px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.role-badge {
+    font-size: 11px;
+    padding: 2px 7px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.role-admin  { background: #ff6f00; color: #fff; }
+.role-teacher { background: #2e7d32; color: #fff; }
+.role-student { background: #6a1b9a; color: #fff; }
+
+.btn-logout {
+    background: #c62828 !important;
+    color: #fff !important;
+    padding: 5px 12px !important;
+    border-radius: 4px;
+}
+
+.btn-logout:hover {
+    background: #b71c1c !important;
+}
+
+/* ============================================================
+   MAIN CONTENT
+   ============================================================ */
+.site-main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 24px auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* ============================================================
+   PAGE TITLE
+   ============================================================ */
+.page-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1565c0;
+    border-bottom: 2px solid #1565c0;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+.card {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #dde3ea;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1565c0;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e3e8ef;
+}
+
+/* ============================================================
+   DASHBOARD GRID
+   ============================================================ */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.dash-card {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #dde3ea;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.dash-card .dash-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1565c0;
+}
+
+.dash-card .dash-label {
+    font-size: 13px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.dash-card-blue  { border-top: 4px solid #1565c0; }
+.dash-card-green { border-top: 4px solid #2e7d32; }
+.dash-card-orange { border-top: 4px solid #e65100; }
+.dash-card-purple { border-top: 4px solid #6a1b9a; }
+
+/* ============================================================
+   FORMS
+   ============================================================ */
+.form-wrapper {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="file"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    color: #333;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #1565c0;
+    outline: none;
+    background: #fff;
+}
+
+.form-group textarea {
+    height: 90px;
+    resize: vertical;
+}
+
+.form-group .hint {
+    font-size: 12px;
+    color: #888;
+    margin-top: 3px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn {
+    display: inline-block;
+    padding: 9px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #1565c0;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #0d47a1;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-success {
+    background: #2e7d32;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background: #1b5e20;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-danger {
+    background: #c62828;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: #b71c1c;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-sm {
+    padding: 5px 12px;
+    font-size: 12px;
+}
+
+.btn-full {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+/* ============================================================
+   TABLES
+   ============================================================ */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+table th {
+    background: #1565c0;
+    color: #fff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+table td {
+    padding: 9px 12px;
+    border-bottom: 1px solid #e8ecf0;
+    vertical-align: middle;
+}
+
+table tr:nth-child(even) {
+    background: #f5f7fa;
+}
+
+table tr:hover {
+    background: #edf2fb;
+}
+
+/* ============================================================
+   ALERTS / MESSAGES
+   ============================================================ */
+.alert {
+    padding: 10px 16px;
+    border-radius: 5px;
+    margin-bottom: 14px;
+    font-size: 14px;
+    border: 1px solid transparent;
+}
+
+.alert-success {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border-color: #a5d6a7;
+}
+
+.alert-error {
+    background: #ffebee;
+    color: #c62828;
+    border-color: #ef9a9a;
+}
+
+.alert-info {
+    background: #e3f2fd;
+    color: #1565c0;
+    border-color: #90caf9;
+}
+
+/* ============================================================
+   LOGIN / REGISTER PAGE
+   ============================================================ */
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 0;
+}
+
+.auth-box {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #dde3ea;
+    padding: 30px 32px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.auth-box h2 {
+    font-size: 20px;
+    color: #1565c0;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.auth-box .auth-sub {
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.auth-links {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+}
+
+.auth-links a {
+    color: #1565c0;
+}
+
+/* ============================================================
+   SUBJECT CARDS
+   ============================================================ */
+.subject-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 14px;
+}
+
+.subject-card {
+    background: #fff;
+    border: 1px solid #dde3ea;
+    border-left: 4px solid #1565c0;
+    border-radius: 6px;
+    padding: 14px 16px;
+}
+
+.subject-card.elective {
+    border-left-color: #e65100;
+}
+
+.subject-card .sub-code {
+    font-size: 11px;
+    color: #888;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.subject-card .sub-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin: 4px 0 8px;
+}
+
+.subject-card .elective-tag {
+    font-size: 11px;
+    background: #fff3e0;
+    color: #e65100;
+    padding: 2px 7px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+/* ============================================================
+   BADGE / STATUS
+   ============================================================ */
+.badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.badge-green  { background: #e8f5e9; color: #2e7d32; }
+.badge-orange { background: #fff3e0; color: #e65100; }
+.badge-blue   { background: #e3f2fd; color: #1565c0; }
+.badge-grey   { background: #f0f2f5; color: #555; }
+
+/* ============================================================
+   MARKS DISPLAY
+   ============================================================ */
+.marks-stars {
+    color: #f9a825;
+    font-size: 16px;
+}
+
+.marks-score {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+/* ============================================================
+   BREADCRUMB
+   ============================================================ */
+.breadcrumb {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 16px;
+}
+
+.breadcrumb a {
+    color: #1565c0;
+}
+
+.breadcrumb span {
+    margin: 0 5px;
+}
+
+/* ============================================================
+   INDEX / HERO
+   ============================================================ */
+.hero {
+    background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%);
+    color: #fff;
+    padding: 48px 32px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 15px;
+    opacity: 0.9;
+    margin-bottom: 24px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.hero-buttons a {
+    padding: 10px 24px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-white {
+    background: #fff;
+    color: #1565c0;
+}
+
+.btn-white:hover {
+    background: #e3f2fd;
+    text-decoration: none;
+    color: #0d47a1;
+}
+
+.btn-outline-white {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-outline-white:hover {
+    background: rgba(255,255,255,0.15);
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer {
+    background: #0d47a1;
+    color: #c9d8f5;
+    margin-top: auto;
+    padding-top: 30px;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+}
+
+.footer-col h4 {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 6px;
+}
+
+.footer-col p {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 6px;
+}
+
+.footer-col ul li a {
+    color: #adc4ec;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    background: #0a3880;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 12px;
+    color: #8aaed9;
+}
+
+/* ============================================================
+   UTILITY
+   ============================================================ */
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
+.text-muted  { color: #888; font-size: 13px; }
+
+.empty-state {
+    text-align: center;
+    padding: 40px;
+    color: #888;
+}
+
+.empty-state .empty-icon {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    .dashboard-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header-nav {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .auth-box {
+        padding: 20px 16px;
+    }
+}
